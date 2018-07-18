@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Workflows for Whole Stream Metabolism | WATER@ISI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+});
+</script>
+<style>
+.selected{
+	background-color:#8c6868;
+}
+#topbar{
+	background-color: #d5d2fb;
+}
+</style>
+<div class="w3-container w3-theme-light w3-padding-16" " id ="topbar">
+		<header class="w3-container w3-theme w3-padding w3-center" id="topMenu" > 
+			<div class="w3-container">
+				<div class="w3-half w3-container w3-padding-8">
+					<a href="index.html"><img src="http://water.wings-workflows.org/themes/bartik/logo.png" width="80" style="float:center"/></a> 
+				</div>
+			</div> 
+
+			<center>
+				<h1> Discovery Informatics for Aquatic Ecosystems </h1>     
+			</center>
+
+			<div class="w3-center">
+				<div class="w3-bar w3-theme">
+					<a href="index.html" class="w3-bar-item w3-button w3-padding-8">STEEDS</a>
+					<a href="aquaflow.html" class="w3-bar-item w3-button w3-padding-8">Aqua-Flow</a>
+					<a href="waes.html" class="w3-bar-item w3-button w3-padding-8">WAES 2011</a>
+				</div>  
+			</div>
+		</header>
+</div>
+	<header class="w3-content w3-theme w3-padding w3-center" id="title"> 
+
+		<center>
+			<h2> Workflows for Whole Stream Metabolism </h2>     
+			<h5> Submitted by admin on Sun, 03/20/2011 - 08:32 </h5>
+			<h2> Workflow Sketch </h2>     
+			<h5> Workflows represent data analysis processes as a graph of tasks connected by the dataflow among them. As an example, consider a prototypical workflow for calculating whole stream metabolism integrating dissolved oxygen and temperature sensor time series data with ancillary data on the photoperiod and stream flow conditions. A sketch depicting the workflow is as follows: </h5>
+			<p><img width="500px" src="http://water-wiki.isi.edu/images/9/95/Aquaflow-workflow-small.png" /></p>
+			<i>Prototypical workflow for calculating whole stream metabolism integrating dissolved oxygen and temperature sensor time series data with ancillary data on the photoperiod and stream flow conditions.</i>
+			<h2> Computational workflow </h2>
+			<h5>Workflow systems can represent workflows of analytic steps capture and manage their execution automatically and efficiently. Here is a workflow with the computations in the sketch above, showing parallel processing of datasets:</h5>
+			<p><img width="500px" src="http://water-wiki.isi.edu/images/6/65/Wings-workflow.png" /></p>
+			<h5>Executing this workflow produces the following result:</h5>
+			<p><img width="500px" src="http://water-wiki.isi.edu/images/9/91/Run_64-GPP-plot.png" /></p>
+		</center>
+	</header>
+<footer class="w3-container w3-theme-light w3-padding-16" style="box-shadow:0 50vh 0 50vh #d5d2fb;" id ="footerContent">
+</footer>
+<div class="w3-center">
+			<div class="w3-bar w3-theme">
+				<a href="index.html" class="w3-bar-item w3-button w3-padding-8">STEEDS</a>
+				<a href="aquaflow.html" class="w3-bar-item w3-button w3-padding-8">Aqua-Flow</a>
+				<a href="waes.html" class="w3-bar-item w3-button w3-padding-8">WAES 2011</a>
+			</div>  
+		</div>
+</body>
+</html>
